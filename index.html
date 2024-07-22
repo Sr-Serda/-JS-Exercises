@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p id="pEl"class="texto__paragrafo"></p>
+        <div class="container__botoes">
+            <!--Botões de Mostrar a Tela-->
+            <button id="btnMostrarImc" onclick="mostrarImc()">Calculo do Imc - Página</button>
+            <button id="btnMostrarFatorial" onclick="mostrarFatorial()">Calculo do fatorial - Página</button>
+            <button id="btnMostrarCotacao" onclick="mostrarCotacao()">Calculo da cotação - Página</button>
+            <button id="btnMostrarRetangulo" onclick="mostrarRetangulo()">Calculo da área e perímetro do retângulo - Página</button>
+            <button id="btnMostrarCirculo" onclick="mostrarCirculo()">Calculo da área e perímetro do círculo - Página</button>
+            <button id="btnMostrarTabuada" onclick="mostrarTabuada()">Tabuada - Página</button>
+            <!--Botões de Voltar-->
+            <button id="btnVoltarImc" onclick="voltarImc()" hidden>Voltar</button>
+            <button id="btnVoltarFatorial" onclick="voltarFatorial()" hidden>Voltar</button>
+            <button id="btnVoltarCotacao" onclick="voltarCotacao()" hidden>Voltar</button>
+            <button id="btnVoltarRetangulo" onclick="voltarRetangulo()" hidden>Voltar</button>
+            <button id="btnVoltarCirculo" onclick="voltarCirculo()" hidden>Voltar</button>
+            <button id="btnVoltarTabuada" onclick="voltarTabuada()" hidden>Voltar</button>
+            <!--Botões que Fazem uma ação relacionada a calculo-->
+            <button id="btnCalcularImc"onclick="calculoImc()" hidden>Calculo do Imc</button>
+            <button id="btnCalcular" onclick="calcularFatorial()" hidden>Calculo do fatorial</button>
+            <button id="btnCalcularCotacao" onclick="calcularCotacao()" hidden>Calculo da cotação</button>
+            <button id="btnCalcularRetangulo" onclick="calcularRetangulo()" hidden>Calculo da área e perímetro</button>
+            <button id="btnCalcularCirculo" onclick="calcularCirculo()" hidden>Calculo da área e perímetro</button>
+            <button id="btnCalcularTabuada" onclick="calcularTabuada()" hidden>Calculo da Tabuada</button>
+        </div>
+        <div class="container__inputs">
+            <!--input de fatorial-->
+            <input id="inputElFatorial" placeholder="Fatorar" type="number" class="container__input" hidden>
+            <!--Inputs do IMC-->
+            <input id="inputElPeso" placeholder="Coloque o peso" type="number" class="container__input" hidden>
+            <input id="inputElAltura" placeholder="Coloque a altura" type="number" class="container__input" hidden>
+            <!--Input da cotação-->
+            <input id="inputElCotacao" placeholder="Reais para cotação" type="number" class="container__input" hidden>
+            <input id="inputElCotacaoDolar" placeholder="Cotação do Dólar" type="number" class="container__input" hidden>
+            <!--inputs do Cálculo do retâgulo-->
+            <input id="inputElLargura" placeholder="Largura do Retângulo" type="number" class="container__input" hidden>
+            <input id="inputElAlturaRetangulo" placeholder="Altura do Retângulo" type="number" class="container__input" hidden>
+            <!--Input do Cálculo do Círculo-->
+            <input id="inputElCirculo" placeholder="Raio do Circulo" type="number" class="container__input" hidden>
+            <!--Input da tabuada-->
+            <input id="inputElTabuada" placeholder="Número para calcular" type="number" class="container__input" hidden>
+        </div>
+        <p id="pElTabuada"class="texto__paragrafo"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
